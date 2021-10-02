@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/React-BookShelf/static/css/main.0ce00d85.chunk.css",
+    "main.js": "/React-BookShelf/static/js/main.b9f50703.chunk.js",
+    "main.js.map": "/React-BookShelf/static/js/main.b9f50703.chunk.js.map",
+    "runtime-main.js": "/React-BookShelf/static/js/runtime-main.3e87b593.js",
+    "runtime-main.js.map": "/React-BookShelf/static/js/runtime-main.3e87b593.js.map",
+    "static/js/2.1cdde1e9.chunk.js": "/React-BookShelf/static/js/2.1cdde1e9.chunk.js",
+    "static/js/2.1cdde1e9.chunk.js.map": "/React-BookShelf/static/js/2.1cdde1e9.chunk.js.map",
+    "static/js/3.ba3f679c.chunk.js": "/React-BookShelf/static/js/3.ba3f679c.chunk.js",
+    "static/js/3.ba3f679c.chunk.js.map": "/React-BookShelf/static/js/3.ba3f679c.chunk.js.map",
+    "index.html": "/React-BookShelf/index.html",
+    "static/css/main.0ce00d85.chunk.css.map": "/React-BookShelf/static/css/main.0ce00d85.chunk.css.map",
+    "static/js/2.1cdde1e9.chunk.js.LICENSE.txt": "/React-BookShelf/static/js/2.1cdde1e9.chunk.js.LICENSE.txt",
+    "static/media/Logo.b023956b.svg": "/React-BookShelf/static/media/Logo.b023956b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3e87b593.js",
+    "static/js/2.1cdde1e9.chunk.js",
+    "static/css/main.0ce00d85.chunk.css",
+    "static/js/main.b9f50703.chunk.js"
+  ]
+}
