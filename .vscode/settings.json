@@ -1,12 +1,11 @@
 {
-    "liveSassCompile.settings.formats": [
-
-        {
-            "format": "expanded",
-            "extensionName": ".css",
-            "savePath": "/src"
-        }
-    ],
-    "editor.tabSize": 2,
-    "files.autoSave": "afterDelay"
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "expanded",
+			"extensionName": ".css",
+			"savePath": "/src"
+		}
+	],
+	"editor.tabSize": 2,
+	"files.autoSave": "afterDelay"
 }

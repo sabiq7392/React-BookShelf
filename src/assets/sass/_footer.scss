@@ -1,0 +1,35 @@
+footer {
+  display: flex;
+  align-items: center;
+  z-index: 0;
+  padding: 20px 30px;
+  background: $primary-color;
+  .container {
+    display: grid;
+    grid-gap: $gap-2;
+    max-width: 1200px;
+    margin: auto;
+    ul {
+      display: flex;
+      justify-content: center;
+      grid-gap: $gap-2;
+      li {
+        &:nth-child(1) > a > i {
+          color: #dd2a7b;
+        }
+        
+        &:nth-child(2) > a > i {
+          color: #2b3137;
+        }
+
+        &:nth-of-type(3) > a > i {
+          color:  #0e76a8;
+        }
+
+        a i {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
