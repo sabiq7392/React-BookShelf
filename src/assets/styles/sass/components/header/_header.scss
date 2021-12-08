@@ -1,0 +1,57 @@
+#appHeader {
+  @include navbar-top-sticky();
+  background-color: $color-light;        
+  box-shadow: $shadow-bottom;
+  padding: 0 30px ;
+  .container {
+    @include place-vertical-center(flex);
+    justify-content: space-between;
+    margin: auto;
+    .logo-brand img {
+      width: 200px;
+    }
+    .search-section {
+      @include place-vertical-center(grid);
+      border-radius: $border-radius-container;
+      h2 {
+        color: $color-font-title;
+      }
+      form {
+        padding: 16px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        label, button {
+          color: $color-font-title
+        }
+        label {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        }
+        input {
+          padding: 8px;
+          width: 300px;
+          border-top-right-radius: $disabled-0;
+          border-bottom-right-radius: $disabled-0;
+          background-color: #f8f8f8;
+          border: 1px solid #ececee;
+        }
+        button {
+          display: grid;
+          place-items: center;
+          background-color: #ececec;
+          cursor: pointer;
+          padding: 8px;
+          border: $disabled-none;
+          border-top-left-radius: $disabled-0;
+          border-bottom-left-radius: $disabled-0;
+          &:hover {
+            filter: $brightness-hover;
+          }
+        }
+      }
+    }
+  }
+}
+

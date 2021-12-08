@@ -1,0 +1,47 @@
+@import './lib/variables';
+@import './lib/Mame';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:  $background;
+}
+
+h2 {
+    font-size: 28px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 32px auto;
+    color: $color-font-title;
+}
+
+input, 
+button {
+    border-radius: $border-radius-button;
+    border: $border-button;
+    font-size: 16px;
+    color: $color-font-title;
+}
+
+input:focus {
+    outline: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+@import './components/header/header';
+@import './components/footer/footer';
+@import './components/main/main';

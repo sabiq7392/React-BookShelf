@@ -1,0 +1,21 @@
+@mixin iconColor($selector, $color) {
+  a:nth-child(#{$selector}) {
+    color: $color;
+  }
+}
+
+footer {
+  @include place-center(grid);
+  gap: $gap-md;
+  padding: 20px 30px;
+  background: $color-primary;
+  z-index: 0;
+  div {
+    a > i {
+      font-size: 18px;
+    }
+    @include iconColor(1, $color-instagram);
+    @include iconColor(2, $color-github);
+    @include iconColor(3, $color-linkedin);
+  }
+}

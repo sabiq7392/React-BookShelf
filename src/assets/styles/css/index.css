@@ -1,0 +1,297 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+.align-items-center {
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+}
+@media only screen and (min-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.container-fluid {
+  max-width: 100%;
+  padding: 0 36px;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.gap-sm {
+  gap: 5px;
+}
+
+.gap-md {
+  gap: 10px;
+}
+
+.gap-lg {
+  gap: 15px;
+}
+
+.gap-xl {
+  gap: 20px;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+/*
+  Mame.scss
+  Make your code simple, readble and easy to maintain
+
+  Author: Sabiq Muhammad Antebing Mame;
+  Contact: sabiqmuhammad98@gmail.com;
+  Github: sabiq7392;
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f0f0f0;
+}
+
+h2 {
+  font-size: 28px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 32px auto;
+  color: #222;
+}
+
+input,
+button {
+  border-radius: 5px;
+  border: 1px solid rgba(27, 38, 44, 0.1);
+  font-size: 16px;
+  color: #222;
+}
+
+input:focus {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#appHeader {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #f8f8f8;
+  box-shadow: 0.8px 7.1px 7.9px rgba(0, 0, 0, 0.015), 6px 57px 63px rgba(0, 0, 0, 0.03);
+  padding: 0 30px;
+}
+#appHeader .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+#appHeader .container .logo-brand img {
+  width: 200px;
+}
+#appHeader .container .search-section {
+  display: grid;
+  align-items: center;
+  border-radius: 10px;
+}
+#appHeader .container .search-section h2 {
+  color: #222;
+}
+#appHeader .container .search-section form {
+  padding: 16px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#appHeader .container .search-section form label, #appHeader .container .search-section form button {
+  color: #222;
+}
+#appHeader .container .search-section form label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+#appHeader .container .search-section form input {
+  padding: 8px;
+  width: 300px;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  background-color: #f8f8f8;
+  border: 1px solid #ececee;
+}
+#appHeader .container .search-section form button {
+  display: grid;
+  place-items: center;
+  background-color: #ececec;
+  cursor: pointer;
+  padding: 8px;
+  border: none !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+#appHeader .container .search-section form button:hover {
+  filter: brightness(90%);
+}
+
+footer {
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  padding: 20px 30px;
+  background: #F0D9DA;
+  z-index: 0;
+}
+footer div a > i {
+  font-size: 18px;
+}
+footer div a:nth-child(1) {
+  color: #dd2a7b;
+}
+footer div a:nth-child(2) {
+  color: #2b3137;
+}
+footer div a:nth-child(3) {
+  color: #0e76a8;
+}
+
+main {
+  width: 100%;
+  max-width: 1300px;
+  margin: 60px auto;
+  padding: 16px;
+}
+main #shortingMenu {
+  display: flex;
+  gap: 20px;
+  margin: 30px 0;
+}
+main #shortingMenu button {
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(34, 34, 34, 0.4);
+  text-decoration: none;
+  transition: 0.2s;
+  cursor: pointer;
+}
+main #shortingMenu button:hover, main #shortingMenu button.active {
+  text-decoration: underline;
+}
+main #shortingMenu button:nth-child(1):hover, main #shortingMenu button:nth-child(1).active {
+  color: #08D9D6;
+}
+main #shortingMenu button:nth-child(2):hover, main #shortingMenu button:nth-child(2).active {
+  color: #FF6E74;
+}
+main #shortingMenu button:nth-child(3):hover, main #shortingMenu button:nth-child(3).active {
+  color: #ecbe85;
+}
+main #shortingMenu button:nth-child(4):hover, main #shortingMenu button:nth-child(4).active {
+  color: #55B688;
+}
+main #incompleteBookShelf {
+  display: grid;
+  grid-gap: 20px;
+  padding: 16px;
+  border-radius: 10px;
+}
+main #incompleteBookShelf h2 {
+  grid-gap: 5px;
+  color: #222;
+}
+main #incompleteBookShelf .book-list-container {
+  display: grid;
+  gap: 20px;
+}
+main #incompleteBookShelf .book-list-container #bookListIncompleteImportant,
+main #incompleteBookShelf .book-list-container #bookListIncompleteMedium,
+main #incompleteBookShelf .book-list-container #bookListIncompleteLow {
+  border-left-width: 10px;
+  border-left-style: solid;
+  background-color: #f8f8f8;
+}
+main #incompleteBookShelf .book-list-container #bookListIncompleteImportant {
+  border-color: #FF6E74;
+}
+main #incompleteBookShelf .book-list-container #bookListIncompleteMedium {
+  border-color: #ecbe85;
+}
+main #incompleteBookShelf .book-list-container #bookListIncompleteLow {
+  border-color: #55B688;
+}
+main #completeBookShelf {
+  display: grid;
+  grid-gap: 20px;
+  padding: 16px;
+  border-radius: 10px;
+}
+main #completeBookShelf h2 {
+  grid-gap: 5px;
+  color: #222;
+}
+main #completeBookShelf .book-list-container #bookListCompleted {
+  border-color: #ececec;
+  border-left-width: 10px;
+  border-left-style: solid;
+}
+main .book-list {
+  position: relative;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  min-height: 194px;
+  padding: 16px;
+  background-color: #fcfcfc;
+  border-radius: 10px;
+}
+main .book-list:hover {
+  border-left: 10px solid #fcfcfc !important;
+}
+main .book-list:hover .pop_title {
+  left: -28px;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,29 @@
+main {
+  width: 100%;
+  max-width: 1300px;
+  margin: 60px auto;
+  padding: 16px;
+  @import '_shorting-menu';
+  @import '_incomplete-bookshelf';
+  @import '_complete-bookshelf';
+  .book-list {
+    // display: none;
+    position: relative;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: $gap-md;
+
+    min-height: 194px;
+    padding: 16px;
+    background-color: #fcfcfc;  
+    border-radius: $border-radius-container;
+    &:hover {
+      border-left: 10px solid #fcfcfc  !important;
+      .pop_title {
+        left: -28px;
+      }
+    }
+  }
+}
+
+
+

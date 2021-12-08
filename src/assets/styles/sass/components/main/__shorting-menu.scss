@@ -1,0 +1,39 @@
+@mixin anchorChangeColorWhenHoverAndActive
+($selector, $color) {
+  button:nth-child(#{$selector}) {
+    &:hover, &.active {
+      color: $color;
+    }
+  }
+}
+
+#shortingMenu {
+  display: flex;
+  gap: 20px;
+  margin: 30px 0;
+  button {
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba($color-font-title, 0.4);
+    text-decoration: none;
+    transition: $transition-fast;
+    cursor: pointer;
+    &:hover, 
+    &.active {
+      text-decoration: underline;
+    }
+  }
+
+  @include anchorChangeColorWhenHoverAndActive(
+    1, $color-show-all
+  );
+  @include anchorChangeColorWhenHoverAndActive(
+    2, $color-priority-important
+  );
+  @include anchorChangeColorWhenHoverAndActive(
+    3, $color-priority-medium
+  );
+  @include anchorChangeColorWhenHoverAndActive(
+    4, $color-priority-low
+  );
+}

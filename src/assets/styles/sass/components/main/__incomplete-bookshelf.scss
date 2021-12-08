@@ -1,0 +1,34 @@
+#incompleteBookShelf {
+  display: grid;
+  grid-gap: 20px;
+  padding: 16px;
+  border-radius: $border-radius-container;
+  h2 {
+    grid-gap: $gap-sm;
+    color: $color-font-title;
+  }
+
+  .book-list-container {
+    display: grid;
+    gap: 20px;
+    #bookListIncompleteImportant,
+    #bookListIncompleteMedium,
+    #bookListIncompleteLow {
+      border-left-width: 10px;
+      border-left-style: solid;
+      background-color: $color-light;
+    }
+  
+    #bookListIncompleteImportant {
+      border-color: $color-priority-important;
+    }
+  
+    #bookListIncompleteMedium {
+      border-color: $color-priority-medium;
+    }
+  
+    #bookListIncompleteLow {
+      border-color: $color-priority-low;
+    }
+  }
+}
